@@ -3,6 +3,7 @@ const fs = require("fs");
 const processFile = (fileName) => {
   const first = [];
   const second = [];
+
   fs.readFileSync(fileName, "utf8")
     .split("\n")
     .forEach((s) => {
